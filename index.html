@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>現在位置アプリ</title>
+
+    <link rel="stylesheet" href="style.css">
+<!-- LeafletのCSS -->
+    <link rel="stylesheet"
+              href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">    <!-- LeafletのJavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>現在位置アプリ</h1>
+
+    <button id="getLocation">現在位置を取得</button>
+
+    <p id="status">ボタンを押してください</p>
+
+    <div class="result">
+        <p>緯度：<span id="latitude">---</span></p>
+        <p>経度：<span id="longitude">---</span></p>
+        <p>精度：<span id="accuracy">---</span></p>
+    </div>
+
+    <!-- 地図の表示領域 -->
+    <div id="map"></div>
+</body>
+</html>
